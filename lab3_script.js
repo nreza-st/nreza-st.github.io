@@ -8,17 +8,17 @@ function setup()
     createCanvas(600, 400)
     background(bgColor)
 
-    slider = createSlider(20, 100, 50)
-    slider.position(50, height - 50)
+    slider = createSlider(50, 200, 90)
+    slider.position(200, height - 368)
 
     dropdown = createSelect()
-    dropdown.position(width - 150, 20)
+    dropdown.position(width - 100, 31)
     dropdown.option('Pink', '#FFBABA')
     dropdown.option('Green', '#678A74')
     dropdown.changed(() => bgColor = dropdown.value())
 
     button = createButton('RANDOM COLOR!')
-    button.position(width / 2 - 50, height - 50)
+    button.position(width / 2 - -50, height - 370)
     button.mousePressed(() => shapeColor = [random(255), random(255), random(255)])
 
 }
