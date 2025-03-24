@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+    Assignment: Citing Code
+</title>
+
+<style>
+#div1
+{
+font-size:12px
+}
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script 
+src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js">
+</script>
+
+</head>
+
+<body>
+<h1>
+    Combining Tutorials
+</h1>
+
+<div id="div1" class="fa">
+</div>
+
+<script 
+src="citing_code.js">
+</script>
+
+<!-- Tutorial: How TO - Animate Icons (from W3Schools) -->
+<!-- Source: https://www.w3schools.com/howto/howto_js_animate_icons.asp -->
+
+<script>
+function smile() 
+{
+      var a
+      a = document.getElementById("div1")
+      a.innerHTML = "&#xf118;"
+      setTimeout(function () 
+      {
+          a.innerHTML = "&#xf11a;"
+        }, 1000)
+      setTimeout(function () 
+      {
+          a.innerHTML = "&#xf119;"
+        }, 2000)
+      setTimeout(function () 
+      {
+          a.innerHTML = "&#xf11a;"
+        }, 3000)
+}
+    smile()
+    setInterval(smile, 4000)
+</script>
+
+<button 
+onclick="Message()">Click Me!
+</button>
+
+</body>
+</html>
